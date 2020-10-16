@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="STP" version="1" scripttimeout="300" lock="0">
+  <topology>
+    <nodes>
+      <node id="1" name="S2" type="qemu" template="viosl2" image="viosl2-15.2.4.55e" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="c56843a3-c417-4ba5-8c16-a1d801ed5c47" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch.png" config="0" left="849" top="429">
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="1"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="2"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="3"/>
+        <interface id="4" name="Gi1/0" type="ethernet" network_id="4"/>
+      </node>
+      <node id="2" name="S1" type="qemu" template="viosl2" image="viosl2-15.2.4.55e" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="92d5737a-e535-4b62-90b7-884954004ec1" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch.png" config="0" left="621" top="216">
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="1"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="2"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="5"/>
+        <interface id="4" name="Gi1/0" type="ethernet" network_id="6"/>
+      </node>
+      <node id="3" name="S3" type="qemu" template="viosl2" image="viosl2-15.2.4.55e" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="2ac1dbc6-38de-445f-9c40-8b674dac8c7e" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch.png" config="0" left="1080" top="216">
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="3"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="4"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="5"/>
+        <interface id="4" name="Gi1/0" type="ethernet" network_id="6"/>
+      </node>
+    </nodes>
+    <networks>
+      <network id="1" type="bridge" name="Net-Switch2iface_1" left="696" top="226" visibility="0"/>
+      <network id="2" type="bridge" name="Net-Switch2iface_2" left="696" top="226" visibility="0"/>
+      <network id="3" type="bridge" name="Net-Switch1iface_3" left="942" top="472" visibility="0"/>
+      <network id="4" type="bridge" name="Net-Switch1iface_4" left="942" top="472" visibility="0"/>
+      <network id="5" type="bridge" name="Net-Switch2iface_3" left="630" top="202" visibility="0"/>
+      <network id="6" type="bridge" name="Net-Switch2iface_4" left="693" top="244" visibility="0"/>
+    </networks>
+  </topology>
+</lab>
