@@ -1,5 +1,6 @@
 # Lab-STP  
 ## •	Создание сети и настройка основных параметров устройства  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/Lab-STP-schema.jpg "Текст заголовка логотипа 1")  
 ### •	Настройте базовые параметры каждого коммутатора    
   
 interface Vlan1  
@@ -322,4 +323,9 @@ Altn
 ### •	Если оба значения на двух портах равны, каким будет следующее значение, которое использует протокол STP при выборе порта?  
 Altn  
   
-  
+
+
+[R1-Config](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/Lab-STP-S1-Config.txt "")  
+[S1-Config](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/Lab-STP-S2-Config.txt  "")  
+[S2-Config](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/Lab-STP-S3-Config.txt  "")  
+
