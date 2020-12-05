@@ -71,6 +71,10 @@ S3(config)#interface range gigabitEthernet 0/0-3
 S3(config-if-range)#shutdown  
 S3(config)#interface r gigabitEthernet 1/0-3  
 S3(config-if-range)#shutdown  
+
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/all-ports.png "Текст заголовка логотипа 1")  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/all-ports-2.png "Текст заголовка логотипа 1")  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/all-ports-3.png "Текст заголовка логотипа 1")  
 ### •	Настройте подключенные порты в качестве транковых.  
 interface GigabitEthernet0/1  
  switchport trunk allowed vlan 1  
@@ -116,6 +120,10 @@ S3(config)#interface gigabitEthernet 0/2
 S3(config)#no shutdown  
 S3(config)#interface gigabitEthernet 1/0  
 S3(config)#no shutdown  
+
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/ports-1.png "Текст заголовка логотипа 1")  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/ports-2.png "Текст заголовка логотипа 1")  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/ports-3.png "Текст заголовка логотипа 1")  
 ### •	Отобразите данные протокола spanning-tree.  
 S1  
 VLAN0001   
@@ -266,6 +274,11 @@ S3(config)#interface gigabitEthernet 0/1
 S3(config)#no shutdown  
 S3(config)#interface gigabitEthernet 0/3  
 S3(config)#no shutdown  
+
+
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/ports-1-1.png "Текст заголовка логотипа 1")  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/ports-1-2.png "Текст заголовка логотипа 1")  
+![alt-текст](https://github.com/DanilChery/CiscoProjectsSTP/blob/main/ports-1-3.png "Текст заголовка логотипа 1") 
 ### •	 выполните команду show spanning-tree  
 S1  
   
